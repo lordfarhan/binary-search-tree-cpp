@@ -1,6 +1,7 @@
 #include <iostream>
 #include <cstdlib>
 #include <queue>
+#include <limits>
 
 using namespace std;
 
@@ -450,9 +451,10 @@ int main()
   BinarySearchTree b;
   int selectedOption, insertedData, deletedData;
 
-  cout << " Hai Fellas, met datang di program Binary Search Tree " << endl;
   while (1)
   {
+    system("CLS");
+    cout << " Hai Fellas, met datang di program Binary Search Tree " << endl;
     cout << endl;
     cout << " =================================== " << endl;
     cout << " 1. Tambah data " << endl;
@@ -527,5 +529,9 @@ int main()
       cout << " ----------------------------------- " << endl;
       cout << " Opsi tidak tersedia" << endl;
     }
+
+    cout << " Tekan enter untuk melanjukan...";
+    cin.ignore(std::numeric_limits<streamsize>::max(), '\n');
+    cin.ignore(std::numeric_limits<streamsize>::max(), '\n');
   }
 };
