@@ -453,9 +453,8 @@ int main()
   cout << " Hai Fellas, met datang di program Binary Search Tree " << endl;
   while (1)
   {
-    cout << endl
-         << endl;
-    cout << " ----------------------------- " << endl;
+    cout << endl;
+    cout << " =================================== " << endl;
     cout << " 1. Tambah data " << endl;
     cout << " 2. Pre-order " << endl;
     cout << " 3. In-order " << endl;
@@ -469,51 +468,64 @@ int main()
     switch (selectedOption)
     {
     case 1:
+      cout << endl;
+      cout << " ----------------------------------- " << endl;
       cout << " Masukkan node yang akan diselipkan : ";
       cin >> insertedData;
       b.insert(insertedData);
+      cout << " Data berhasil diselipkan" << endl;
       break;
     case 2:
       cout << endl;
+      cout << " ----------------------------------- " << endl;
       cout << " Pre-order " << endl;
-      cout << " -------------------" << endl;
       b.printPreOrder();
+      cout << endl;
       break;
     case 3:
       cout << endl;
+      cout << " ----------------------------------- " << endl;
       cout << " In-order " << endl;
-      cout << " -------------------" << endl;
       b.printInOrder();
+      cout << endl;
       break;
     case 4:
       cout << endl;
+      cout << " ----------------------------------- " << endl;
       cout << " Post-order " << endl;
-      cout << " --------------------" << endl;
       b.printPostOrder();
+      cout << endl;
       break;
     case 5:
       cout << endl;
-      cout << " Jumlah node pada tree " << endl;
-      cout << " --------------------" << endl;
-      cout << " ";
+      cout << " ----------------------------------- " << endl;
+      cout << " Jumlah node pada tree: ";
       cout << b.count(b.getRoot()) << endl;
       break;
     case 6:
       cout << endl;
-      cout << " Kedalaman node " << endl;
-      cout << " --------------------" << endl;
-      cout << " ";
+      cout << " ----------------------------------- " << endl;
+      cout << " Kedalaman node: ";
       cout << b.depth(b.getRoot()) << endl;
       break;
     case 7:
+      cout << endl;
+      cout << " ----------------------------------- " << endl;
       cout << " Masukkan node yang akan dihapus: ";
       cin >> deletedData;
       b.remove(b.getRoot(), deletedData);
+      cout << " Data berhasil dihapus" << endl;
       break;
     case 8:
+      cout << endl;
+      cout << " ----------------------------------- " << endl;
+      cout << " Selamat tinggal, sampai jumpa kembali." << endl;
+      cout << " =================================== " << endl;
       return 0;
     default:
-      cout << " Opsi tidak tersedia";
+      cout << endl;
+      cout << " ----------------------------------- " << endl;
+      cout << " Opsi tidak tersedia" << endl;
     }
   }
 };
